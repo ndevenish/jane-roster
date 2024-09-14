@@ -1,0 +1,8 @@
+#jane profiles=[python]
+__pycache__/
+.coverage
+.pytype/
+*.egg-info/
+*.pyc
+.DS_Store
+dist/

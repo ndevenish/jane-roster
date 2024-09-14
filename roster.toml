@@ -1,0 +1,18 @@
+
+
+[[jane.profile]]
+name = "default"
+includes = ["ruff-lint", "ruff-isort", "license-bsd3"]
+depends = ["python"]
+
+[[jane.profile]]
+name = "ruff-lint"
+depends = ["ruff"]
+
+[[jane.profile]]
+name = "ruff-isort"
+depends = ["ruff-lint"]
+
+[[jane.profile]]
+name = "license"
+mutually_exclusive_includes = ["license-bsd3"]
