@@ -1,6 +1,6 @@
 
 [jane]
-exclude = ["README.md"]
+exclude = ["README.md", "LICENSE"]
 
 [[jane.profile]]
 name = "default"
