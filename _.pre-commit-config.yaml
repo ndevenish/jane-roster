@@ -1,0 +1,20 @@
+---
+jane: true
+filename: .pre-commit-config.yaml
+---
+
+#jane profiles=[ruff]
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit #jane key
+    rev: v0.6.5 #jane update-only
+    hooks:
+      - id: ruff #jane [ruff-lint]
+        args: [--fix, --exit-non-zero-on-fix] #jane [ruff-lint]
+      - id: ruff-format #jane [ruff-format]
+
+#jane profiles=[mypy]
+repos:
+  - repo: https://github.com/pre-commit/mirrors-mypy #jane key
+    rev: v1.9.0 #jane update-only
+    hooks:
+      - id: mypy
